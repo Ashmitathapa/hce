@@ -1,0 +1,25 @@
+<table style="border: 1px solid #870f0f; margin-top: 10px;">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>address</th>
+            <th>email</th>
+            <th>phonenumber</th>
+            <th>username</th>
+            <!-- Add other columns as needed -->
+        </tr>
+    </thead>
+   <tbody>
+       {% for c in customer%}
+                 
+            <tr>
+                <td>{{ c.name }} </td>
+                <td>{{ c.address }} </td>
+                <td>{{ c.email }} </td>
+                <td>{{ c.phonenumber}} </td>
+                <td>{{ c.username }} </td>
+                <!-- Add other columns as needed -->
+            </tr>
+            {% endfor %}
+    </tbody>
+</table>
